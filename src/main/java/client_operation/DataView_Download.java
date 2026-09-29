@@ -37,15 +37,15 @@ public class DataView_Download
         String column_name[]=null;
         try
         {
-        Statement st=new DBDriver().getDBStatement();
-        String query="Select * from "+tablename;
+          Statement st=new DBDriver().getDBStatement();
+          String query="Select * from "+tablename;
             
-        ResultSet rs=st.executeQuery(query);
+          ResultSet rs=st.executeQuery(query);
             
-        ResultSetMetaData rsmd=rs.getMetaData();
-        int no_columns=rsmd.getColumnCount();
+          ResultSetMetaData rsmd=rs.getMetaData();
+          int no_columns=rsmd.getColumnCount();
            
-        column_name=new String[no_columns];
+          column_name=new String[no_columns];
           for (int i = 0; i < no_columns; i++) 
             {
                 column_name[i]=rsmd.getColumnName(i+1);

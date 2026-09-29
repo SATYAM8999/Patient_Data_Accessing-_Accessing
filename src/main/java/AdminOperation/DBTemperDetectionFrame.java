@@ -124,6 +124,11 @@ public class DBTemperDetectionFrame extends javax.swing.JFrame {
         jComboBox2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jComboBox2.setForeground(new java.awt.Color(255, 255, 255));
         jComboBox2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 204, 204)));
+        jComboBox2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox2ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jComboBox2);
         jComboBox2.setBounds(200, 110, 250, 30);
 
@@ -409,6 +414,10 @@ public class DBTemperDetectionFrame extends javax.swing.JFrame {
         tde.stop();
         DBTemperDetectionFrame.jTextArea1.append("DB Engine Stop!!! \n");
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jComboBox2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBox2ActionPerformed
 
     /**
      * @param args the command line arguments

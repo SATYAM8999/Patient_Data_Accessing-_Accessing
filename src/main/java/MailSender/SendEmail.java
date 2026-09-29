@@ -12,7 +12,7 @@ public class SendEmail
         boolean flag=false;
         try
         {
-        final String senderEmail = "45harshal45@gmail.com";
+        final String senderEmail = "satyamgadekar@gmail.com";
         final String appPassword = "ukep hqwj hugc rhrx";
          Properties props = new Properties();
 
